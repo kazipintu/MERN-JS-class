@@ -83,46 +83,47 @@
   console.log(enrollEmployee);
 }
 
+{
+  class Y9Prime {
+    make;
+    releaseYear;
+    screenSize;
+    cameraFront;
+    cameraBack;
+    memory;
+    processor;
+    capacity;
+    constructor(make, releaseYear, screenSize, cameraFront, cameraBack, memory, processor, capacity,) {
+      this.make = make;
+      this.releaseYear = releaseYear;
+      this.screenSize = screenSize;
+      this.cameraFront = cameraFront;
+      this.cameraBack = cameraBack;
+      this.memory = memory;
+      this.processor = processor;
+      this.capacity = capacity;
+    }
+    entryMobileData() {
+    }
+  }
+  const newY9Prime = new Y9Prime('Huawei', 2019, '6.3"', '8 mp', '12 mp', '6 gb', '2.4 ghz snapdragon', '128 gb');
+  //console.log(newY9Prime);
 
-class Y9Prime {
-  make;
-  releaseYear;
-  screenSize;
-  cameraFront;
-  cameraBack;
-  memory;
-  processor;
-  capacity;
-  constructor(make, releaseYear, screenSize, cameraFront, cameraBack, memory, processor, capacity,) {
-    this.make = make;
-    this.releaseYear = releaseYear;
-    this.screenSize = screenSize;
-    this.cameraFront = cameraFront;
-    this.cameraBack = cameraBack;
-    this.memory = memory;
-    this.processor = processor;
-    this.capacity = capacity;
+
+  class redmi10 extends Y9Prime {
+    make;
+    releaseYear;
+    screenSize;
+
+    constructor(make, releaseYear, screenSize) {
+      super(memory, processor, capacity)
+      this.make = make;
+      this.releaseYear = releaseYear;
+      this.screenSize = screenSize
+    }
+    entryNewMobile() {
+    }
   }
-  entryMobileData() {
-  }
+  const newRedmi10 = new redmi10('xiomi', 2019, '5.9"',);
+  console.log(newRedmi10);
 }
-const newY9Prime = new Y9Prime('Huawei', 2019, '6.3"', '8 mp', '12 mp', '6 gb', '2.4 ghz snapdragon', '128 gb');
-//console.log(newY9Prime);
-
-
-class redmi10 extends Y9Prime {
-  make;
-  releaseYear;
-  screenSize;
-
-  constructor(make, releaseYear, screenSize) {
-    super(memory, processor, capacity);
-    this.make = make;
-    this.releaseYear = releaseYear;
-    this.screenSize = screenSize
-  }
-  entryNewMobile() {
-  }
-}
-const newMobile = new redmi10('xiomi', 2019, '5.9"',);
-console.log(newMobile);
